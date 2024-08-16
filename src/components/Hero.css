@@ -1,0 +1,68 @@
+/* src/components/HomePage.css */
+.homepage {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: #ffffff;
+    color: white;
+    padding: 50px;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  .header p {
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+
+  .content p {
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    padding-left: 30px;
+    color: rgb(212, 200, 200);
+  }
+  
+  .main-image {
+    max-width: 100%;
+    height: 400px;
+    background-image: url("C:\Users\Pavan-kumar\Desktop\gotham insights\client\public\batman2.jpg");
+    background-size: cover;
+    border-radius: 10px;
+  }
+  
+  @media screen and (max-width: 690px) {
+    .header {
+      padding: 180px;
+    }
+  
+    .header h1 {
+      font-size: 1.8em;
+    }
+  
+    .header p {
+      font-size: 1em;
+    }
+  
+    .content {
+      padding: 10px;
+    }
+  
+    .content p {
+      font-size: 0.9em;
+      line-height: 1.5;
+    }
+  }
+  

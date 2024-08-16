@@ -1,0 +1,76 @@
+.nav{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    /* margin-bottom: 50px; */
+    flex-direction: row;
+    position: fixed;
+    z-index: 3;
+}
+.logor{
+    color:rgb(64, 255, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.links{
+    background-color: black;
+    color: rgb(255,195,0);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo{
+    display: flex;
+    height: 100px;
+    width: 50%;
+    align-items: center;
+    text-align: right;
+    padding-left: 5%;
+    background-color: black;
+    color:rgb(64, 255, 0);
+    gap: 40px;
+}
+
+.option{
+    display: flex;
+    height: 100px;
+    width: 50%;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    color: rgb(229, 255, 0);
+    gap: 5%;
+    background-color: black;
+} 
+
+
+
+
+ @media screen and (max-width: 690px) {
+    .nav{
+        margin-bottom: 250px;
+        flex-direction: row;
+    }
+    .icon{
+        visibility: visible;
+        color: blanchedalmond;
+    }
+    .logo{
+        width: 100%;
+        justify-content: center;
+        background-color: rgb(4, 2, 0);
+        color: rgb(64, 255, 0);
+        padding-left: 0%;
+    }
+    .links{
+        background-color: rgb(40, 40, 37);
+        color: rgb(19, 18, 17);
+    }
+    .option{
+        height: 250px;
+        width: 100%;
+        flex-direction: column;
+        background-color:rgb(40, 40, 37);
+        color: rgb(234, 231, 228);
+    } ;
+    }
+  
