@@ -17,7 +17,7 @@ export default function Signup() {
         setvis("visible")
   
       
-      fetch(`http://localhost:8000/signup`,{
+      fetch(`https://backend-ei59.onrender.com/signup`,{
           method:"POST",
           headers:{"Content-Type":"application/json"},
           body:JSON.stringify(udetailes)

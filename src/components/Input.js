@@ -24,7 +24,7 @@ export default function Input() {
       
 
     
-    fetch(`http://localhost:8000/add`,{
+    fetch(`https://backend-ei59.onrender.com/add`,{
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify(blog)

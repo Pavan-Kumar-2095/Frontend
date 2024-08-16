@@ -10,7 +10,7 @@ export default function Card() {
   const shoot = async () => {
 
     try{
-        const response = await fetch(`http://localhost:8000/shop`);
+        const response = await fetch(`https://backend-ei59.onrender.com/shop`);
         console.log(response)
         const data = await response.json();
         console.log(data)

@@ -12,7 +12,7 @@ export default function Input() {
       console.log(id);
 
     
-    fetch(`http://localhost:8000/delete`,{
+    fetch(`https://backend-ei59.onrender.com/delete`,{
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify(blog)

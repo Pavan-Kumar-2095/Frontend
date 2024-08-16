@@ -12,7 +12,7 @@ export default function Item() {
       
       const fetcher = async () =>{
         try{
-        const response = await fetch(`http://localhost:8000/shop/${id}`);
+        const response = await fetch(`https://backend-ei59.onrender.com/shop/${id}`);
         const data = await response.json();
         console.log(data)
         setkana(data)
