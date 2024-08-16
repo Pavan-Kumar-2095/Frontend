@@ -38,7 +38,7 @@
   .main-image {
     max-width: 100%;
     height: 400px;
-    background-image: url("C:\Users\Pavan-kumar\Desktop\gotham insights\client\public\batman2.jpg");
+    background-image: url("https://images.unsplash.com/photo-1612916628677-475f676a6adf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmF0bWFufGVufDB8fDB8fHww");
     background-size: cover;
     border-radius: 10px;
   }
