@@ -46,10 +46,6 @@
 
 
 @media screen and (max-width: 690px) {
-    .nav {
-        margin-bottom: 250px;
-        flex-direction: row;
-    }
     .icon{
         visibility: visible;
         color: blanchedalmond;
@@ -74,14 +70,5 @@
     } ;
     }
   
-    @media screen and (max-width: 350px) {
-        .logo{
-            display: flex;
-            text-align: center;
-        }
-        .icon{
-            display: flex;
-            text-align: center;
-        }
-    }
+    
       
