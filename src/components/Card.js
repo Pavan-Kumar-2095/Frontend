@@ -18,7 +18,7 @@ export default function Card() {
         console.log(info)
     }
     catch{
-      setinfo([{"headlines":"error","content":404 , "date": "xx xxxxxx xxxx xx:xx"}])
+      setinfo([{headlines:"error",content:404 , date: "xx xxxxxx xxxx xx:xx"}])
     }
         
     
