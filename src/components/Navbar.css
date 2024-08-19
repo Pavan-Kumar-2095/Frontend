@@ -64,6 +64,7 @@
     .option{
         height: 250px;
         width: 100%;
+        display: flex;
         flex-direction: column;
         background-color:rgb(40, 40, 37);
         color: rgb(234, 231, 228);
