@@ -50,6 +50,10 @@
         visibility: visible;
         color: blanchedalmond;
     }
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
     .logo{
         width: 100%;
         justify-content: center;
