@@ -7,24 +7,9 @@
     padding: 0;
   }
   
-  .header {
-    background-color: #ffffff;
-    color: white;
-    padding: 50px;
-  }
-  
-  .header h1 {
-    margin: 0;
-    font-size: 2em;
-  }
-  
-  .header p {
-    font-size: 1.2em;
-    margin: 5px 0;
-  }
   
   .content {
-    padding: 20px;
+    padding-top: 200px;
   }
 
   .content p {
@@ -44,20 +29,9 @@
   }
   
   @media screen and (max-width: 690px) {
-    .header {
-      padding: 180px;
-    }
-  
-    .header h1 {
-      font-size: 1.8em;
-    }
-  
-    .header p {
-      font-size: 1em;
-    }
   
     .content {
-      padding: 10px;
+      padding-top: 350px;
     }
   
     .content p {

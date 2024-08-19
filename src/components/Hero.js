@@ -5,10 +5,6 @@ export default function hero() {
   return (
     <div>
        <div className="homepage">
-      <header className="header">
-        <h1>.</h1>
-        <p></p>
-      </header>
       <section className="content">
         <div  
           className="main-image" 
