@@ -17,7 +17,7 @@ export default function MainPage() {
   return (
     <div className='nav'>
       <div className='logo' >
-      <div style={{textDecoration:"none"}} className='logor' onClick={cansee}  ><h1>Gotham insights</h1></div>
+       <h1 style={{textDecoration:"none"}} className='logor' onClick={cansee}   >Gotham insights</h1>
       </div>
       <div className='option' style={{ visibility:vis}}  >
         <Link to='/' style={{ textDecoration: 'none' , color: 'yellow'}} className='links' ><h4>HOME</h4></Link>

@@ -52,7 +52,7 @@
     }
     .nav{
         display: flex;
-        flex-direction: column;
+        
     }
     .logo{
         width: 100%;
