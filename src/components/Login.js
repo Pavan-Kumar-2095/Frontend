@@ -67,7 +67,7 @@ export default function Signup() {
         </div>
         <button   className='button'><h3>SUBMIT</h3></button>
         <p>don't have an account? then create one</p>
-        <Link to='/add' className='submit'> signup </Link>
+        <Link to='/signup' className='submit'> signup </Link>
         <button   className='Loggedbutton' style={{visibility:vis}}><h5>Logged-in</h5></button>
         <button   className='exitbutton' style={{visibility:visi}}><h5>user doesnot exist</h5></button>
         </form>
