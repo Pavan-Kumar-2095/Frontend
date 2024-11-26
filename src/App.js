@@ -21,13 +21,13 @@ function App() {
             <Route exact path='/shop' element={<Shop/>}/>
             <Route exact path='/shop/:id' element={<Item/>}/>
             <Route exact path='/add'  element={<Login/>}/>
-            <Route exact path='/importantLink'  element={<Signup/>}/>
+            <Route exact path='/add'  element={<Signup/>}/>
             <Route exact path='/input'  element={<Input/>}/>
             <Route exact path='/delete' element={<Loggindel/>}/>
             <Route exact path='/realdelete' element={<Delete/>}/>
             <Route exact path='/login' element={<Login/>}/>
         </Routes>
-        </Router>
+    </Router>
            
   );
 }
