@@ -2,7 +2,7 @@ import React from 'react'
 import './Signup.css'
 import Footer from "../components/Footer"
 import {useState} from 'react'
-
+import {Link} from 'react-router-dom'
 export default function Signup() {
     const  [ username , setusername] = useState("");
     const  [ password , setpassword] = useState("");
@@ -49,6 +49,7 @@ export default function Signup() {
         </div>
         <button   className='button'><h3>SUBMIT</h3></button>
         <p>already have an account? then</p>
+        <Link to='/add' className='submit'> signup </Link>
         <button   className='Abutton' style={{visibility:vis}}><h5>Account Created</h5></button>
         </form>
         </div>
