@@ -49,7 +49,7 @@ export default function Signup() {
         </div>
         <button   className='button'><h3>SUBMIT</h3></button>
         <p>already have an account? then</p>
-        <Link to='/add' className='submit'> signup </Link>
+        <Link to='/add' className='submit'> Login </Link>
         <button   className='Abutton' style={{visibility:vis}}><h5>Account Created</h5></button>
         </form>
         </div>
