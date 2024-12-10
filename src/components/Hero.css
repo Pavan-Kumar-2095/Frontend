@@ -1,42 +1,154 @@
-/* src/components/HomePage.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f5; /* Lighter background color */
+  color: #e4dada;
+  /* margin and padding already reset globally above */
+}
+
+/* Homepage Container */
 .homepage {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-  
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the top */
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 40px 20px; /* Add padding to the homepage */
+}
+
+.content {
+  display: flex;
+  flex-direction: row; /* Arrange children side-by-side */
+  justify-content: space-between; /* Space out items within the row */
+  align-items: center; /* Vertically align the items */
+  max-width: 900px; /* Limit content width */
+  margin: 100px auto; /* Centered horizontally with margin at the top and bottom */
+  padding: 20px; /* Padding inside the content */
+  width: 100%; /* Full width of the parent container */
+  gap: 40px; /* Space between the elements */
+}
+
+.main-image {
+  width: 50%; /* Takes up 50% of the row width */
+  height: 300px; /* Fixed height for the image */
+  background-image: url('C:\Users\Pavan-kumar\Desktop\gotham insights\client\public\logo192.png'); /* Corrected relative path */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+.main-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Dark overlay */
+  border-radius: 10px;
+}
+
+.content p {
+  width: 40%; /* Text section takes up 40% of the row */
+  font-size: 18px;
+  line-height: 1.8;
+  color: #ffffff; /* Changed from white for better visibility */
+  font-weight: 500;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Spacing between elements */
+  margin-top: 30px;
+}
+
+.google-login-btn {
+  background-color: #34a853; /* Google Green */
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  width: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.google-login-btn:hover {
+  background-color: #2c8e47; /* Darker green on hover */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0; /* Small padding for better layout */
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .content {
-    padding-top: 200px;
+    padding: 10px;
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align to start, not center */
+    gap: 20px;
+  }
+
+  .main-image {
+    width: 100%; /* Image takes up full width */
+    height: 200px; /* Adjusted height for smaller screens */
   }
 
   .content p {
-    padding: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: larger;
-    padding-left: 30px;
-    color: rgb(212, 200, 200);
+    width: 100%; /* Text takes up full width */
+    font-size: 16px; /* Smaller font size on mobile */
+    text-align: center; /* Center text for better mobile experience */
   }
-  
-  .main-image {
-    max-width: 100%;
-    height: 400px;
-    background-image: url("https://images.unsplash.com/photo-1612916628677-475f676a6adf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmF0bWFufGVufDB8fDB8fHww");
-    background-size: cover;
-    border-radius: 10px;
+
+  .google-login-btn {
+    font-size: 14px;
+    padding: 10px 18px; /* Adjust button size */
   }
-  
-  @media screen and (max-width: 690px) {
-  
-    .content {
-      padding-top: 350px;
-    }
-  
-    .content p {
-      font-size: 0.9em;
-      line-height: 1.5;
-    }
+
+  footer {
+    padding: 10px 0;
+    font-size: 12px; /* Smaller font for footer */
   }
-  
+}
+
+@media (max-width: 480px) {
+  .content p {
+    font-size: 14px; /* Even smaller text for very small screens */
+  }
+
+  .google-login-btn {
+    font-size: 12px;
+    padding: 8px 16px; /* Smaller button for very small screens */
+  }
+
+  footer {
+    font-size: 10px; /* Even smaller footer font */
+  }
+}

@@ -10,7 +10,7 @@ export default function Card() {
   const shoot = async () => {
 
     try{
-        const response = await fetch(`https://backend-ei59.onrender.com/shop`);
+        const response = await fetch(` https://backend-ei59.onrender.com/news`);
         console.log(response)
         const data = await response.json();
         console.log(data)
@@ -34,10 +34,10 @@ export default function Card() {
     <div  className='cardsection'>
       {info.map((ele)=>{
         return(
-        <Link to={`/shop/${ele._id}`} style={{ textDecoration: 'none' , color: 'white'}} className='card' key={ele._id}>
+        <Link to={`/news/${ele._id}`} style={{ textDecoration: 'none' , color: 'white'}} className='card' key={ele._id}>
 
-          <Link to={`/shop/${ele._id}`}  style={{ textDecoration: 'none' }} className='prod'>{ele.date}</Link>
-          <Link to={`/shop/${ele._id}`}   style={{ textDecoration: 'none' , color: 'white'}}className='detail'><h5>{ele.headlines.slice(0,60)}...</h5></Link>
+          <Link to={`/news/${ele._id}`}  style={{ textDecoration: 'none' }} className='prod'>{ele.date}</Link>
+          <Link to={`/news/${ele._id}`}   style={{ textDecoration: 'none' , color: 'white'}}className='detail'><h5>{ele.headlines.slice(0,60)}...</h5></Link>
 
         </Link >
         )

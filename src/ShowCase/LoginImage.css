@@ -1,0 +1,48 @@
+/* Center the entire container on the page */
+.center-container {
+  display: flex;
+  justify-content: center;       /* Horizontally center the content */
+  align-items: center;           /* Vertically center the content */
+  height: 100vh;                 /* Take full viewport height */
+  background-color: #f0f0f0;    /* Light background color for the entire page */
+}
+
+/* Centered content box */
+.center-content {
+  display: flex;
+  flex-direction: column;        /* Stack content vertically */
+  justify-content: center;       /* Center the content inside */
+  align-items: center;           /* Center the content horizontally */
+  width: 100%;
+  max-width: 400px;              /* Max width of the content box */
+  background-color: white;      /* White background for the content */
+  border-radius: 10px;           /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for effect */
+  padding: 20px;                 /* Padding inside the content box */
+  text-align: center;            /* Center text inside */
+}
+
+/* Styling for the heading */
+.center-content h2 {
+  margin-bottom: 10px;           /* Space below the heading */
+  font-size: 24px;               /* Font size for the heading */
+  color: #333;                   /* Dark color for the text */
+}
+
+/* Styling for the paragraph */
+.center-content p {
+  margin-bottom: 20px;           /* Space below the paragraph */
+  font-size: 18px;               /* Font size for the paragraph */
+  color: #555;                   /* Slightly lighter color for the text */
+}
+
+/* Styling for the link */
+.center-content a {
+  color: #4285F4;                /* Google blue color */
+  text-decoration: none;         /* Remove underline */
+  font-weight: bold;             /* Make the link bold */
+}
+
+.center-content a:hover {
+  text-decoration: underline;    /* Underline on hover */
+}

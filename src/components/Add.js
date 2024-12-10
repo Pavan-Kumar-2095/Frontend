@@ -1,13 +1,41 @@
 import { React , useState } from 'react'
-import  './Input.css'
+import  './Add.css'
+import Footer from "../components/Footer"
+
+
+import LoginImage from '../ShowCase/LoginImage'; 
+
 export default function Input() {
+
+    const [ Imageurl , setImageurl ] = useState("https://via.placeholder.com/300")
 
     const  [ headlines , setheadlines] = useState("");
     const  [ content , setcontent] = useState("");
     const  [ vis , setvis] = useState("hidden");
 
-    const axiox =(e)=>{
 
+    const upload = async (e) => {
+      const photo = e.target.files[0];
+      const formData = new FormData();
+      formData.append("file", photo);
+    
+      const options = {
+        method: "POST",
+        body: formData,
+      };
+    
+      try {
+        const res = await fetch("https://backend-ei59.onrender.com/upload", options);
+        const data = await res.json(); 
+        console.log(data);  
+        setImageurl(data.imageUrl); 
+      } catch (error) {
+        console.error("Error uploading image:", error);
+      }
+    };
+    
+    const axiox =(e)=>{
+    
       e.preventDefault();
 
       const months = [
@@ -17,9 +45,10 @@ export default function Input() {
       let now = new Date()
       let time = now.getDate () + " "  + months[now.getMonth()] + " " + now.getUTCFullYear()+ " " + now.getHours() + ":" + now.getMinutes()
    
-
-      const blog = { headlines , content , time}
-      console.log(headlines,content , time);
+      const author = sessionStorage.getItem('username');
+      const authorEmail = sessionStorage.getItem('userMail');
+      const blog = { headlines , content , time , author , authorEmail , Imageurl }
+      console.log(headlines,content , time,author,authorEmail,blog);
       setvis("visible")
       
 
@@ -33,11 +62,18 @@ export default function Input() {
     })
     setheadlines("")
     setcontent("")
+
     setTimeout(() => {
       setvis("hidden");
     }, 2000);
-       
-    }
+    window.location.href = window.location.href;
+  
+   
+  }
+  
+  let data = sessionStorage.getItem("key"); 
+  console.log(data)
+  if(data==="return"){
   return (
     <div >
       <div className='input'>
@@ -50,10 +86,23 @@ export default function Input() {
         <h4>ENTER NEWS </h4>
         <input type='text' alt='input' required value={content} className='box'    onChange={(e)=> setcontent(e.target.value)}></input>
         </div>
+        <br></br>
+        <h4>Upload Image </h4>
+        <br></br>
+        <input type='file' accept='image/*' id='Ifile'onChange={upload} required ></input>
         <button   className='button'><h3>SUBMIT</h3></button>
         <button   className='Abutton' style={{visibility:vis}}><h5>submitted</h5></button>
         </form>
         </div>
+        <Footer/>
     </div>
   )
 }
+  else{
+   return (
+    <div>
+      <LoginImage/>
+      <Footer/>
+    </div>
+   )
+  }}

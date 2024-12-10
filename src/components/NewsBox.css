@@ -1,0 +1,140 @@
+/* Global reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Use a modern, clean font */
+}
+
+/* Main Item Section */
+.item {
+    padding-top: 150px;
+    background: linear-gradient(145deg, #e0e0e0, #b0b0b0); /* Light gradient for background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+    transition: all 0.3s ease;
+}
+
+/* Date Section */
+.date {
+    display: flex;
+    font-size: 14px;
+    color: #d5d0d0;
+    margin-bottom: 10px;
+}
+
+/* Headlines Section */
+.headlines {
+    background-color: #333; /* Dark background for headlines */
+    color: #f9f93c; /* Bright yellow text */
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: all 0.3s ease;
+}
+
+/* Content Section */
+.content {
+    width: 100%;
+    background-color: #4c4c4c; /* Darker background for content */
+    color: #e9e8e3; /* Light text for content */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+/* Page Container */
+.page {
+    height: 90%;
+    width: 80%;
+    background-color: #000;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+/* Image Section */
+.img {
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    background-color: #000;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for image */
+.img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Mobile View Adjustments */
+@media screen and (max-width: 690px) {
+    .item {
+        padding-top: 50px; /* Adjust padding for smaller screens */
+        background: linear-gradient(145deg, #d1d1d1, #a0a0a0); /* Lighter gradient */
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        margin-top: 200px;
+    }
+
+    .headlines {
+        font-size: 20px; /* Adjust font size */
+        padding: 15px;
+    }
+
+    .content {
+        margin-top: 200px;
+        font-size: 14px; /* Smaller font size */
+        padding: 15px;
+    }
+
+    .page {
+        width: 100%; /* Take up full width on mobile */
+        padding: 15px;
+    }
+
+    .img {
+        height: auto; /* Smaller image height */
+        margin-bottom: 15px;
+    }
+
+    .date {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Hover Effects */
+.headlines:hover {
+    color: #ffcc00; /* Highlight headlines with a golden color on hover */
+    cursor: pointer;
+}
+
+
+/* Smooth Transitions */
+* {
+    transition: all 0.3s ease;
+}

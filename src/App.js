@@ -1,14 +1,13 @@
 import './App.css';
 import Nav from './components/Navbar';
 import {BrowserRouter  as Router,Routes,Route} from 'react-router-dom'
-import Hero from './components/Hero';
-import Shop from './components/Shop';
-import Item from './components/Item';
-import Input from './components/Input';
+import News from './components/News';
+import Newsbox from './components/NewsBox';
+import Add from './components/Add';
 import Delete from './components/Delete';
-import Signup from './components/Signup';
-import Login from './components/Login';
-import Loggindel from './components/Loggindel';
+import Hero from './components/Hero'; 
+
+
 function App() {
 
 
@@ -17,15 +16,11 @@ function App() {
     <Router>
         <Nav/>
         <Routes>
-            <Route exact path='/' element={<Hero/>}/>
-            <Route exact path='/shop' element={<Shop/>}/>
-            <Route exact path='/shop/:id' element={<Item/>}/>
-            <Route exact path='/add'  element={<Login/>}/>
-            <Route exact path='/signup'  element={<Signup/>}/>
-            <Route exact path='/input'  element={<Input/>}/>
-            <Route exact path='/delete' element={<Loggindel/>}/>
-            <Route exact path='/realdelete' element={<Delete/>}/>
-            <Route exact path='/login' element={<Login/>}/>
+          <Route exact path='/' element={<Hero/>}/> 
+          <Route exact path='/news' element={<News/>}/>
+          <Route exact path='/news/:id' element={<Newsbox/>}/>
+          <Route exact path='/add'  element={<Add/>}/>
+          <Route exact path='/delete' element={<Delete/>}/>
         </Routes>
     </Router>
            

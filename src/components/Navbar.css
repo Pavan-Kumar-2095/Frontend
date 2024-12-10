@@ -1,75 +1,93 @@
-.nav{
+/* Default .nav styles */
+.nav {
     display: flex;
     height: 100px;
     width: 100%;
-    /* margin-bottom: 50px; */
     flex-direction: row;
     position: fixed;
     z-index: 3;
+    top: 0;
+    background-color: black; /* Ensure background color is applied */
 }
-.logor{
-    color:rgb(64, 255, 0);
+
+/* Logo Styles */
+.logor {
+    color: rgb(64, 255, 0);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.links{
-    background-color: black;
-    color: rgb(255,195,0);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.logo{
+.logo {
     display: flex;
     height: 100px;
     width: 50%;
     align-items: center;
-    text-align: right;
-    padding-left: 5%;
+    justify-content: flex-start; /* Align text to the right */
     background-color: black;
-    color:rgb(64, 255, 0);
-    gap: 40px;
+    padding-left: 20px;
+    color: rgb(64, 255, 0);
 }
 
-.option{
+/* Links Section */
+.links {
+    background-color: black;
+    color: rgb(255, 195, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Option Section */
+.option {
     display: flex;
     height: 100px;
     width: 50%;
     justify-content: center;
-    text-align: left;
     align-items: center;
+    text-align: left;
     color: rgb(229, 255, 0);
     gap: 5%;
     background-color: black;
-} 
+}
 
-
-
-
+/* Media Query for Mobile (max-width: 690px) */
 @media screen and (max-width: 690px) {
-    .icon{
-        visibility: visible;
-        color: blanchedalmond;
+    /* Ensure .nav stacks vertically */
+    .nav {
+        flex-direction: column; /* Stack the navigation items vertically */
+
     }
-    .logo{
-        width: 100%;
-        justify-content: center;
-        background-color: rgb(4, 2, 0);
+
+    /* Adjust .logo */
+    .logo {
+        width: 100%; /* Full width of the screen */
+        padding-top: 20px;
+        justify-content: center; /* Center logo horizontally */
+        padding-left: 0; /* Remove padding */
+        background-color: rgb(4, 2, 0); /* Update background color for mobile */
         color: rgb(64, 255, 0);
+        gap: 0; /* No gap between logo and options */
     }
-    .links h4{
-        background-color: #000000;
-        color: #ffff05;
+
+    /* Links section adjustments */
+    .links {
+        display: flex;
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center items horizontally */
+        margin-top: 20px; /* Space between the logo and links */
+        width: 100%; /* Make sure links section takes full width */
+        padding: 10px 0; /* Add padding for better spacing */
     }
-    .option{
+
+    /* Adjust .option for mobile */
+    .option {
         color: #e5ff00;
-        gap: 5%;
-        width: 100vw;
-        justify-content: center;
-        text-align: left;
-        flex-direction: column;
-        height: 200px;
-    } ;
+        gap: 10%; /* Increase gap between items for better mobile spacing */
+        width: 100vw; /* Ensure full width on mobile */
+        justify-content: center; /* Center items in the option section */
+        text-align: center; /* Center the text */
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Allow the height to adjust based on content */
     }
+}
+
   
     
       

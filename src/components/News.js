@@ -1,7 +1,7 @@
 import React from 'react'
-import './Shop.css'
+import './News.css'
 import Card from '../components/Card';
-import Footer from "../components/Footer"
+import Footer from "./Footer"
 export default function Shop() {
   return (
     <div className='padding'>
