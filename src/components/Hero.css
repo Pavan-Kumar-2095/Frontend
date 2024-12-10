@@ -38,7 +38,7 @@ body {
 .main-image {
   width: 50%; /* Takes up 50% of the row width */
   height: 300px; /* Fixed height for the image */
-  background-image: url('public\logo192.png'); /* Corrected relative path */
+  background-image: url('C:\Users\Pavan-kumar\Desktop\gotham insights\client\public\logo192.jpg'); /* Corrected relative path */
   background-size: cover;
   background-position: center;
   border-radius: 10px;
