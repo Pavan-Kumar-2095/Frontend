@@ -66,9 +66,6 @@ export default function Input() {
     setTimeout(() => {
       setvis("hidden");
     }, 2000);
-    window.location.href = window.location.href;
-  
-   
   }
   
   let data = sessionStorage.getItem("key"); 

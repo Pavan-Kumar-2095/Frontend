@@ -6,7 +6,7 @@ import './NewsBox.css'
 export default function Item() {
 
     const {id} = useParams();
-    const [content, setcontent] = useState([{_id:404,headlines:"error",content:"ERROR",URL:"https://via.placeholder.com/300" ,date:"xx xx xxxx" , AuthorName:"xxxxxxxxx",email:"xxxxx@gmail.com",_id:"123456789"}]);
+    const [content, setcontent] = useState([{headlines:"error",content:"ERROR",URL:"https://via.placeholder.com/300" ,date:"xx xx xxxx" , AuthorName:"xxxxxxxxx",email:"xxxxx@gmail.com",_id:"123456789"}]);
 
     useEffect(()=>{
       
@@ -28,8 +28,7 @@ export default function Item() {
       <h3 className='headlines'>{content[0].headlines}</h3>
       <h4 className='date'>{content[0].date}</h4>
       <div className='img' >
-        <img  src={content[0].URL} alt="img"></img>
-        {/* <img src={image} alt="img" className="img"></img> */}
+        <img  src={content[0].URL} alt="img" className="img" ></img>
       </div>
       <h5 className='content'>{content[0].content}</h5>
       <h3 className='headlines'>post by {content[0].AuthorName}</h3>

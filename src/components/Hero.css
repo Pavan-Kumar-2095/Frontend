@@ -21,6 +21,7 @@ body {
   min-height: 100vh;
   background-color: #ffffff;
   padding: 40px 20px; /* Add padding to the homepage */
+  margin-bottom: 0px;
 }
 
 .content {

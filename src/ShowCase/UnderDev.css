@@ -1,0 +1,71 @@
+/* UnderDev.css */
+
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    margin: 0;
+  }
+  
+  .not-found-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px 60px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .not-found-title {
+    font-size: 120px;
+    font-weight: bold;
+    color: #dc3545;
+    margin: 0;
+  }
+  
+  .not-found-message {
+    font-size: 18px;
+    color: #6c757d;
+    margin: 20px 0;
+    line-height: 1.6;
+  }
+  
+  .home-link {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border: 2px solid #007bff;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+  }
+  
+  .home-link:hover {
+    background-color: #007bff;
+    color: #ffffff;
+    border-color: #0056b3;
+    text-decoration: none;
+  }
+  
+  .home-link:focus {
+    outline: none;
+  }
+  
+  @media (max-width: 768px) {
+    .not-found-card {
+      padding: 30px 40px;
+    }
+  
+    .not-found-title {
+      font-size: 100px;
+    }
+  
+    .not-found-message {
+      font-size: 16px;
+    }
+  }
+  

@@ -6,6 +6,7 @@ import Newsbox from './components/NewsBox';
 import Add from './components/Add';
 import Delete from './components/Delete';
 import Hero from './components/Hero'; 
+import UnderDev from './ShowCase/UnderDev';
 
 
 function App() {
@@ -21,8 +22,10 @@ function App() {
           <Route exact path='/news/:id' element={<Newsbox/>}/>
           <Route exact path='/add'  element={<Add/>}/>
           <Route exact path='/delete' element={<Delete/>}/>
+          <Route exact path='*' element={<UnderDev/>} />
         </Routes>
     </Router>
+    
            
   );
 }
