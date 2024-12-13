@@ -4,6 +4,7 @@ import './Card.css'
 export default function Card() {
  
   const [info, setinfo] = useState([]);
+  const [loading, setloading] = useState("true");
   
   useEffect(() => {
 
@@ -11,6 +12,7 @@ export default function Card() {
 
     try{
         const response = await fetch(` https://backend-ei59.onrender.com/news`);
+        setloading("false")
         console.log(response)
         const data = await response.json();
         console.log(data)
@@ -27,8 +29,7 @@ export default function Card() {
     
 },[]);
 
-
-
+if(loading === "false"){
   return (
    
     <div  className='cardsection'>
@@ -43,6 +44,14 @@ export default function Card() {
         )
       })}
     </div>
-  )
+  )}
+
+  else{
+    return (
+    <div class="loading-spinner">
+      <div class="spinner"></div>
+    </div>
+    )
+  }
   
 }

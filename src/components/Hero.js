@@ -12,11 +12,6 @@ export default function hero() {
        <div className="homepage">
       <section className="content">
         <div  className="main-image" ></div>
-        <p>
-          Welcome to Gotham Insights! We provide up-to-date news and in-depth analysis on the most important events happening in Gotham City. 
-          From politics to culture, our team delivers accurate and engaging content to keep you well-informed.
-           Explore our latest articles and stay connected with what’s happening in Gotham.
-        </p>
         <div className="google-login-btn"  >
         <GoogleLogin
                 onSuccess={credentialResponse => {
@@ -38,6 +33,12 @@ export default function hero() {
                  
             />
         </div>
+        <p>
+          Welcome to Gotham Insights! We provide up-to-date news and in-depth analysis on the most important events happening in Gotham City. 
+          From politics to culture, our team delivers accurate and engaging content to keep you well-informed.
+           Explore our latest articles and stay connected with what’s happening in Gotham.
+        </p>
+        
         
 
 
