@@ -12,11 +12,11 @@ export default function Hero() {
   useEffect(() => {
     const storedValue = sessionStorage.getItem("username");
     if (storedValue === "" || storedValue === null) {
-      setGvis("hidden");
+      setGvis("visible");
      
     }
     else{
-      setGvis("visible");
+      setGvis("hidden");
     }
   }, []);
   return (
