@@ -46,3 +46,9 @@
 .center-content a:hover {
   text-decoration: underline;    /* Underline on hover */
 }
+
+@media (max-width: 768px) {
+  .center-content {
+    margin-top: 200px;
+  }
+}

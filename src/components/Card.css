@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 10px;
-    background-color: rgb(64, 64, 65);
+    background-color: #274c77;
     border-radius: 0px;
     flex-direction:column;
 }
@@ -36,7 +36,7 @@
     color: rgb(64, 255, 0);
     font-family:'Courier New', Courier, monospace;
     font-size: larger;
-    background-color: rgb(15, 15, 15);
+    background-color: #191d21;
     border-radius: 0px;
 }
 

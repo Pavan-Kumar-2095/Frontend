@@ -31,8 +31,8 @@
 
 /* Headlines Section */
 .headlines {
-    background-color: #333; /* Dark background for headlines */
-    color: #f9f93c; /* Bright yellow text */
+    background-color: #284b63; /* Dark background for headlines */
+    color: #ffffff; /* Bright yellow text */
     padding: 20px;
     border-radius: 12px;
     margin: 20px 0;
@@ -62,7 +62,7 @@
 .page {
     height: 90%;
     width: 80%;
-    background-color: #000;
+    background-color:#022b3a;
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -127,11 +127,7 @@
     }
 }
 
-/* Hover Effects */
-.headlines:hover {
-    color: #ffcc00; /* Highlight headlines with a golden color on hover */
-    cursor: pointer;
-}
+
 
 
 /* Smooth Transitions */

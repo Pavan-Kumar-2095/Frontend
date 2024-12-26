@@ -18,7 +18,7 @@ body {
   align-items: center;
   justify-content: flex-start; /* Align content to the top */
   min-height: 100vh;
-  background-image: url('https://images.unsplash.com/photo-1560982014-81fd498f57e9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your image URL */
+  background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=2029&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your image URL */
   background-size: cover; /* Ensure the image covers the whole container */
   background-position: center center; /* Center the image */
   background-attachment: fixed; /* Keep the image fixed while scrolling */
@@ -38,15 +38,15 @@ body {
   gap: 30px; /* Reduced space between elements */
   margin-top: 200px;
 
-  background-color: #121212; /* Dark background color */
-  color: #e0e0e0; /* Light text color for readability */
+  background-color: #22223b; /* Dark background color */
+  color: #4a4e69; /* Light text color for readability */
   border-radius: 8px; /* Optional: adds rounded corners */
 }
 
 .main-image {
   width: 48%; /* Slightly reduced width */
   height: 250px; /* Adjusted height */
-  background-image: url('https://images.unsplash.com/photo-1608889175123-8ee362201f81?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-image: url('https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?q=80&w=1896&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: cover;
   background-position: center;
   border-radius: 10px;
@@ -68,7 +68,7 @@ body {
   width: 45%; /* Slightly reduced width */
   font-size: 16px; /* Smaller font size */
   line-height: 1.6;
-  color: #ffffff; /* Changed from white for better visibility */
+  color: #f2e9e4; /* Changed from white for better visibility */
   font-weight: 500;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: justify;
