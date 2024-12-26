@@ -30,7 +30,7 @@ export default function Item() {
       <div className='img' >
         <img  src={content[0].URL} alt="img" className="img" ></img>
       </div>
-      <h5 className='content'>{content[0].content}</h5>
+      <h5 className='content'  style={{ color:"#e9e8e3" , backgroundColor:" rgba(2, 135, 202, 0.1)"}}>{content[0].content}</h5>
       <h3 className='headlines'>post by {content[0].AuthorName}</h3>
       <p>email :  {content[0].email}</p><br></br>
       <p>ID :  {content[0]._id}</p>
