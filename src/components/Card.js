@@ -29,7 +29,7 @@ export default function Card() {
     
 },[]);
 
-if(loading === "true"){
+if(loading === "false"){
   return (
    
     <div  className='cardsection'>
