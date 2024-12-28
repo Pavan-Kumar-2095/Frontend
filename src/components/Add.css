@@ -7,13 +7,13 @@
     width: 200px;
     margin-top: 250px;
     padding-left: 50%;
-    color: black;
+    color: rgb(18, 19, 19);
 }
 
 .button{
     height: 60px;
     width: 400px;
-    background-color: rgb(5, 0, 0);
+    background-color: #2b2d42;
     margin-top: 40px;
     color: rgb(255, 255, 255);
 }
@@ -30,11 +30,11 @@
 .box{
     height: 60px;
     width: 400px;
-    background-color: rgb(185, 182, 182);;
+    background-color:#305682;
     border-radius: 7px;
     margin-top: 20px;
     opacity: 2;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 690px) {

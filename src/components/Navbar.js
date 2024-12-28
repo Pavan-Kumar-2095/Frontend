@@ -25,7 +25,7 @@ export default function MainPage() {
         <Link to='/news' style={{ textDecoration: 'none' , color: '#edf2f4' ,  visibility:vis }} className='links' ><h4 style={{ visibility:vis}} >NEWS</h4></Link>
         <Link to='/add'style={{ textDecoration: 'none' , color: '#edf2f4',  visibility:vis}} className='links' ><h4 style={{ visibility:vis}}>ADD</h4></Link>
         <Link to='/delete' style={{ textDecoration: 'none' , color: '#edf2f4',  visibility:vis }} className='links'><h4 style={{ visibility:vis}} >DELETE</h4></Link>
-        <Link to='/' style={{ textDecoration: 'none' , color: '#22223b' ,  visibility:vis}} className='links' ><h4 style={{ visibility:vis}}> {storedValue}</h4> </Link>
+        <Link to='/' style={{ textDecoration: 'none' , color: '#edf2f4' ,  visibility:vis}} className='links' ><h4 style={{ visibility:vis}}> {storedValue}</h4> </Link>
       </div>
     </div>
   )

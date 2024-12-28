@@ -70,7 +70,7 @@ export default function Input() {
   
   let data = sessionStorage.getItem("key"); 
   console.log(data)
-  if(data==="return"){
+  if(1){  //data==="return"
   return (
     <div >
       <div className='input'>
