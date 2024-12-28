@@ -69,27 +69,20 @@
 }
 
 .img-container {
-    width: 100%;              /* Set the container to take up the full width */
-    height: 300px;            /* Fixed height for the container (you can adjust this) */
-    position: relative;       /* Ensure that the image can be positioned correctly inside */
-    overflow: hidden;         /* Prevent the image from overflowing outside the box */
-    border-radius: 10px;      /* Round the corners of the container */
-    margin: 20px 0;           /* Vertical margin */
-    transition: transform 0.3s ease;  /* Smooth transition for hover effects */
-}
-
-.img-container img {
-    width: 100%;              /* Ensure the image takes up full width of the container */
-    height: 100%;             /* Ensure the image covers the full height of the container */
-    object-fit: cover;        /* Ensures the image covers the container without distortion */
-    object-position: center;  /* Centers the image inside the container */
-    border-radius: 10px;      /* Round the corners of the image (if you want to match the container) */
-    transition: transform 0.3s ease;  /* Optional: smooth transition for any hover effects */
+    width: 100%;                  /* Full width of the container */
+    height: 300px;                /* Fixed height */
+    background-size: cover;       /* Ensure the image covers the box */
+    background-position: center;  /* Center the background image */
+    position: relative;           /* Required for positioning children */
+    overflow: hidden;             /* Prevent any overflow */
+    border-radius: 10px;          /* Optional: round the corners */
+    margin: 20px 0;               /* Vertical margin */
+    transition: transform 0.3s ease; /* Smooth transition for hover effects */
 }
 
 /* Optional: Add hover effect */
 .img-container:hover {
-    transform: scale(1.05);   /* Slight zoom effect when hovering */
+    transform: scale(1.05);        /* Zoom effect when hovering */
 }
 
 /* Mobile View Adjustments */
