@@ -68,20 +68,28 @@
     box-sizing: border-box;
 }
 
-/* Image Section */
-.img {
-    max-width: 100%;
-    height: auto;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin: 20px 0;
-    transition: transform 0.3s ease;
+.img-container {
+    width: 100%;              /* Set the container to take up the full width */
+    height: 300px;            /* Fixed height for the container (you can adjust this) */
+    position: relative;       /* Ensure that the image can be positioned correctly inside */
+    overflow: hidden;         /* Prevent the image from overflowing outside the box */
+    border-radius: 10px;      /* Round the corners of the container */
+    margin: 20px 0;           /* Vertical margin */
+    transition: transform 0.3s ease;  /* Smooth transition for hover effects */
 }
 
-/* Hover effect for image */
-.img:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+.img-container img {
+    width: 100%;              /* Ensure the image takes up full width of the container */
+    height: 100%;             /* Ensure the image covers the full height of the container */
+    object-fit: cover;        /* Ensures the image covers the container without distortion */
+    object-position: center;  /* Centers the image inside the container */
+    border-radius: 10px;      /* Round the corners of the image (if you want to match the container) */
+    transition: transform 0.3s ease;  /* Optional: smooth transition for any hover effects */
+}
+
+/* Optional: Add hover effect */
+.img-container:hover {
+    transform: scale(1.05);   /* Slight zoom effect when hovering */
 }
 
 /* Mobile View Adjustments */
