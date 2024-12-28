@@ -70,8 +70,6 @@
 
 /* Image Section */
 .img-container {
-    width: 300px;               /* Set the width of the image container to 300px */
-    height: 300px;              /* Set the height of the image container to 300px */
     margin: 20px 0;             /* Vertical margin */
     overflow: hidden;          /* Prevent image from overflowing */
     position: relative;        /* For positioning the image correctly inside */
@@ -82,8 +80,8 @@
 }
 
 .img-container img {
-    width: 100%;                /* Ensure the image takes full width of the container */
-    height: 100%;               /* Ensure the image takes full height of the container */
+    width: 300px;               /* Set the width of the image container to 300px */
+    height: 300px;             /* Ensure the image takes full height of the container */
     object-fit: cover;          /* This ensures the image covers the container without distortion */
     object-position: center;    /* Center the image inside the container */
     border-radius: 10px;        /* Optional: round the corners of the image (to match container) */
