@@ -70,19 +70,29 @@
 
 .img-container {
     width: 100%;                  /* Full width of the container */
-    height: 300px;                /* Fixed height */
-    background-size: cover;       /* Ensure the image covers the box */
-    background-position: center;  /* Center the background image */
-    position: relative;           /* Required for positioning children */
-    overflow: hidden;             /* Prevent any overflow */
-    border-radius: 10px;          /* Optional: round the corners */
+    height: 300px;                /* Fixed height (or adjust based on your needs) */
+    position: relative;           /* Position for absolute child elements */
+    overflow: hidden;             /* Prevents image from overflowing */
+    border-radius: 10px;          /* Optional: Round corners of the container */
     margin: 20px 0;               /* Vertical margin */
     transition: transform 0.3s ease; /* Smooth transition for hover effects */
 }
 
+.img-container img {
+    position: absolute;           /* Ensures the image is positioned correctly */
+    top: 0;                        /* Align image to the top */
+    left: 0;                       /* Align image to the left */
+    width: 100%;                   /* Make the image take full width of the container */
+    height: 100%;                  /* Make the image take full height of the container */
+    object-fit: cover;             /* Ensures image covers the container while maintaining its aspect ratio */
+    object-position: center;       /* Centers the image */
+    border-radius: 10px;           /* Optional: Round the corners of the image */
+    transition: transform 0.3s ease; /* Optional: Smooth transition for hover effects */
+}
+
 /* Optional: Add hover effect */
 .img-container:hover {
-    transform: scale(1.05);        /* Zoom effect when hovering */
+    transform: scale(1.05);        /* Zoom effect on hover */
 }
 
 /* Mobile View Adjustments */
