@@ -76,6 +76,9 @@
     overflow: hidden;          /* Prevent image from overflowing */
     position: relative;        /* For positioning the image correctly inside */
     border-radius: 10px;       /* Optional: round the corners of the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-container img {
