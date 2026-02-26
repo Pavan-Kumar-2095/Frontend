@@ -9,17 +9,15 @@ export default function Item() {
     const [content, setcontent] = useState([{headlines:"error",content:"ERROR",URL:"https://via.placeholder.com/300" ,date:"xx xx xxxx" , AuthorName:"xxxxxxxxx",email:"xxxxx@gmail.com",_id:"123456789"}]);
 
     useEffect(()=>{
-      
       const fetcher = async () =>{
-  
-        const response = await fetch(`https://backend-ei59.onrender.com/news/${id}`);
-        const data = await response.json();
-        console.log(data)
-        setcontent(data)
-        console.log(content)
-      }
-      fetcher();
-    },[id])
+      const response = await fetch(`https://backend-ei59.onrender.com/news/${id}`);
+      const data = await response.json();
+      console.log(data)
+      setcontent(data)
+      // console.log(content) // remove or move to another useEffect
+   }
+     fetcher();
+   }, [id])
 
 
   return (
