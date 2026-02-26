@@ -27,7 +27,7 @@ export default function Card() {
   };
   shoot();
     
-},[]);
+},[info]);
 
 if(loading === "false"){
   return (
