@@ -41,7 +41,7 @@ export default function Hero() {
                     sessionStorage.setItem('key', 'return');
                     sessionStorage.setItem('username', decoded.given_name);
                     sessionStorage.setItem('userMail', decoded.email);
-                    window.location.href = window.location.href;
+                    window.location.reload();
 
                 }}
                 onError={() => {
