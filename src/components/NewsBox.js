@@ -19,7 +19,7 @@ export default function Item() {
         console.log(content)
       }
       fetcher();
-    },[])
+    },[id])
 
 
   return (
@@ -28,7 +28,7 @@ export default function Item() {
       <h3 className='headlines'>{content[0].headlines}</h3>
       <h4 className='date'>{content[0].date}</h4>
       <div className='img-container' >
-        <img  src={content[0].URL} alt="Image" ></img>
+        <img  src={content[0].URL} alt="" ></img>
       </div>
       <h5 className='content'  style={{ color:"#e9e8e3" , backgroundColor:" rgba(2, 135, 202, 0.1)"}}>{content[0].content}</h5>
       <h3 className='headlines'>post by {content[0].AuthorName}</h3>
